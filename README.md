@@ -1,16 +1,16 @@
 # Must See Movies Associations
 
+## There is a Getting Started video on Canvas.
+
 In this project, we'll practice associating rows from different tables to one another.
 
 Our goal will be to build something that works like [this target](http://msm-associations-target.herokuapp.com/). (Don't worry about styling -- focus on functionality only. Also, ignore the pagination links at the bottom of the characters index -- but think about how you would go about it if you had to.)
-
-There is a Getting Started video on Canvas.
 
 ## Setup
 
  1. Fork this repository to your own account.
  1. Clone your fork.
- 1. Add the [starter_generators](https://gist.github.com/raghubetina/80d3cf2cf82666ed1c0f) gem.
+ 1. Add the [starter_generators](https://guides.firstdraft.com/starter_generators.html) gem.
  1. `bundle install`
  1. Generate the Director resource:
 
@@ -21,6 +21,8 @@ There is a Getting Started video on Canvas.
  1. Quickly add a few rows to the directors table:
 
         rake db:seed:directors
+ 1. As always, Sync your work to your Fork often.
+ 1. `rails grade` to see how you are doing.
 
 ## Two important notes about `rails console`
 
@@ -32,7 +34,9 @@ There is a Getting Started video on Canvas.
 
 ## Solution
 
-Once you've struggled for a while, it's okay to peek at [one possible solution](https://github.com/appdevfall16/msm_associations_solutions/commits/master).
+Once you've struggled for a while, it's okay to peek at [one possible solution](https://github.com/appdevwinter17/msm_associations_solutions/commits/master).
+
+The historical view given in the linked "Commits" tab might be helpful for you to retrace my steps. For example, here is [one small change}(https://github.com/appdevwinter17/msm_associations_solutions/commit/829852261b0d930d06261f43878cc195eac38b3d).
 
 ## Associating Directors and Movies
 
