@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Director, type: :model do
+RSpec.describe 'Director', type: :model do
   context 'validations' do
     it "will fail if the name is blank", points: 2 do
       director = build(:director, name: "Alfred Hitchcock", dob: "August 13, 1899")

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Movie, type: :model do
+RSpec.describe 'Movie', type: :model do
   context 'validations' do
     it 'will fail if the director_id is nil', points: 2 do
       scorsese = create(:director, name: "Martin Scorsese", dob: "November 17, 1942")

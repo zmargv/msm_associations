@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Actor, type: :model do
+RSpec.describe 'Actor', type: :model do
   context 'validations' do
     it "will fail if the name is blank", points: 2 do
       actor = build(:actor, name: "Leonardo DiCaprio", dob: "November 11, 1974")
