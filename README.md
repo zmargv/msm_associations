@@ -32,12 +32,6 @@ Our goal will be to build something that works like [this target](http://msm-ass
 
  2. If you are in `rails console` and then make a change to a model (for example, you add a validation or fix a syntax error), then, annoyingly, **you have to `exit` and then relaunch `rails console`** to pick up the new logic.
 
-## Solution
-
-Once you've struggled for a while, it's okay to peek at [one possible solution](https://github.com/appdevwinter17/msm_associations_solutions/commits/master).
-
-The historical view given in the linked "Commits" tab might be helpful for you to retrace my steps. For example, here is [one small change}(https://github.com/appdevwinter17/msm_associations_solutions/commit/829852261b0d930d06261f43878cc195eac38b3d).
-
 ## Associating Directors and Movies
 
 ### Can X have many of Y? Can Y have many of X?
