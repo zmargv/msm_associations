@@ -1,6 +1,6 @@
 # Must See Movies Associations
 
-## There is a Getting Started video on Canvas.
+## There is a Getting Started video on Canvas. You should pull that up and start it now.
 
 In this project, we'll practice associating rows from different tables to one another.
 
@@ -16,11 +16,11 @@ Our goal will be to build something that works like [this target](http://msm-ass
 
         rails generate starter:resource director name:string dob:string bio:text image_url:string
 
- 1. `rake db:migrate`
+ 1. `rails db:migrate`
  1. Start the server and navigate to [http://localhost:3000/directors](http://localhost:3000/directors); verify that the CRUD resource boilerplate was generated properly.
  1. Quickly add a few rows to the directors table:
 
-        rake db:seed:directors
+        rails db:seed:directors
  1. As always, Sync your work to your Fork often.
  1. `rails grade` to see how you are doing.
 
@@ -63,11 +63,11 @@ The `director_id` column is intended to hold the `id` of a row from over in the 
 
 Execute the newly generated instructions to add the movies table:
 
-    rake db:migrate
+    rails db:migrate
 
 Quickly add a few rows to the movies table:
 
-    rake db:seed:movies
+    rails db:seed:movies
 
 ### Validations
 
@@ -124,11 +124,11 @@ Let's now add Actors to our application. Our end goal is to show a cast on each 
 
     rails generate starter:resource actor name:string dob:string bio:text image_url:string
 
-`rake db:migrate` and navigate to [http://localhost:3000/actors](http://localhost:3000/actors) and verify that the CRUD resource boilerplate was generated properly.
+`rails db:migrate` and navigate to [http://localhost:3000/actors](http://localhost:3000/actors) and verify that the CRUD resource boilerplate was generated properly.
 
 Then, quickly add a few rows:
 
-    rake db:seed:actors
+    rails db:seed:actors
 
 ### Can X have many of Y? Can Y have many of X?
 
@@ -155,9 +155,9 @@ Add the Character CRUD resource to our application:
 
     rails generate starter:resource character movie_id:integer actor_id:integer name:string
 
-`rake db:migrate` and navigate to [http://localhost:3000/characters](http://localhost:3000/characters) and verify that the CRUD resource boilerplate was generated properly. Then, add a few rows:
+`rails db:migrate` and navigate to [http://localhost:3000/characters](http://localhost:3000/characters) and verify that the CRUD resource boilerplate was generated properly. Then, add a few rows:
 
-    rake db:seed:characters
+    rails db:seed:characters
 
 (This might take a minute.)
 
