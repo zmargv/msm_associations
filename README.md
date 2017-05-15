@@ -71,7 +71,7 @@ Let's add the following validation rules to guard our tables against bogus rows 
      - director_id: must be present
      - title: must be present; must be unique in combination with year
      - year: must be integer between 1870 and 2050
-     - duration: must be integer between 0 and 2764800
+     - duration: must be integer between 0 and 2764800, but it can be blank (hint: there is an option `:allow_blank => true`)
      - description: no rules
      - image_url: no rules
 
