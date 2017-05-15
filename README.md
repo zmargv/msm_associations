@@ -180,7 +180,7 @@ So, we should first go through the steps we went through above when we were sett
 1. On the new and edit character pages, let's give our users a dropdown box to select a movie, rather than having to type in a valid ID number. Let's use the `select_tag` view helper method to make this slightly easier than writing the raw HTML `<select>` and `<option>` tags by hand:
 
 ```erb
-<%= select_tag("movie_id", options_from_collection_for_select(Movie.all, :id, :title, @character.movie_id), :class => "form-control")
+<%= select_tag("movie_id", options_from_collection_for_select(Movie.all, :id, :title, @character.movie_id), :class => "form-control") %>
 ```
 
 1. Let's also add a link to the new movie form in case the movie doesn't exist yet.
