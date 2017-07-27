@@ -101,12 +101,13 @@ For each question, see if you can craft a single Ruby expression that returns th
 
 ### Improving the generated boilerplate views
 
+ 1. You can use the included `rails generate starter:style default` generator to quickly write a much better application layout file. When you run this command, it will warn you that it's about to overwrite the existing application layout — say `y`. Refresh the page, and voila!
  1. Currently, on the movies index page and a movie's show page, the code that the generator wrote for you is showing users raw director ID numbers. This is bad. Replace the id number with the name of the director.
  1. On the new and edit movie pages, let's give our users a dropdown box to select a director, rather than having to type in a valid ID number. Let's use the `select_tag` view helper method to make this slightly easier than writing the raw HTML `<select>` and `<option>` tags by hand:
 
-```erb
-<%= select_tag("director_id", options_from_collection_for_select(Director.all, :id, :name, @movie.director_id), :class => "form-control") %>
-```
+    ```html
+    <%= select_tag("director_id", options_from_collection_for_select(Director.all, :id, :name, @movie.director_id), :class => "form-control") %>
+    ```
 
  1. Let's also add a link to the new director form in case the director doesn't exist yet.
  1. On a director's show page, display a count of how many movies belong to that director.
