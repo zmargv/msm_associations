@@ -25,7 +25,7 @@ Our goal will be to build something that works like [this target](http://msm-ass
     rails dev:prime:directors
     ```
 
- 1. As always, use the [Continuous Integration workflow](https://guides.firstdraft.com/continuous-integration.html) to save, submit, and check progress.
+ 1. As always, use the [Continuous Integration workflow](https://guides.firstdraft.com/continuous-integration.html) to save, submit, and check progress. (You'll have to generate all three `starter:resource`s before any of your tests start passing.)
 
 ## Two important notes about `rails console`
 
