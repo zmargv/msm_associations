@@ -101,9 +101,9 @@ For each question, see if you can craft a single Ruby expression that returns th
 
 ### Improving the generated boilerplate views
 
- 1. You can use the included `rails generate starter:style default` generator to quickly write a much better application layout file, with `<link>`s to Bootstrap, Font Awesome, a navbar, notices, and more. When you run this command, it will warn you that it's about to overwrite the existing application layout — say `y`. Refresh the page, and voila!
+ 1. You can use the included `rails generate starter:style default` generator to quickly write a much better application layout file, with `<link>`s to Bootstrap, Font Awesome, a navbar, notices, and more.
 
-    However, you may want to replace the link to get to the Git page, perhaps in the navbar:
+    When you run this command, it will warn you that it's about to overwrite the existing application layout — say `y`. Refresh the page, and voila! A beautiful new look. However, you may want to replace the link to get to the Git page, perhaps in the navbar:
 
     ```html
     <a href="/rails/git" target="_blank">
