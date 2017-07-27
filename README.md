@@ -8,21 +8,24 @@ Our goal will be to build something that works like [this target](http://msm-ass
 
 ## Setup
 
- 1. Fork this repository to your own account.
- 1. Clone your fork.
- 1. Add the [starter_generators](https://guides.firstdraft.com/starter_generators.html) gem.
- 1. `bundle install`
- 1. Generate the Director resource:
+ 1. You should have gotten here by clicking the assignment in Canvas.
+ 1. Set up [a Cloud9 workspace as usual](https://guides.firstdraft.com/getting-started-with-cloud-9.html).
+ 1. `bin/setup`
+ 1. Run Project
+ 1. I've already added the [starter_generators](https://guides.firstdraft.com/starter_generators.html) gem for you.
+ 1. Generate the Director resource with the following command at a terminal prompt:
 
         rails generate starter:resource director name:string dob:string bio:text image_url:string
 
  1. `rails db:migrate`
- 1. Start the server and navigate to [http://localhost:3000/directors](http://localhost:3000/directors); verify that the CRUD resource boilerplate was generated properly.
+ 1. Navigate to `/directors` verify that the CRUD resource boilerplate was generated properly.
  1. Quickly add a few rows to the directors table:
 
-        rails dev:prime:directors
- 1. As always, Sync your work to your Fork often.
- 1. `rails grade` to see how you are doing.
+    ```
+    rails dev:prime:directors
+    ```
+
+ 1. As always, use the [Continuous Integration workflow](https://guides.firstdraft.com/continuous-integration.html) to save, submit, and check progress.
 
 ## Two important notes about `rails console`
 
@@ -118,7 +121,7 @@ Let's now add Actors to our application. Our end goal is to show a cast on each 
 
     rails generate starter:resource actor name:string dob:string bio:text image_url:string
 
-`rails db:migrate` and navigate to [http://localhost:3000/actors](http://localhost:3000/actors) and verify that the CRUD resource boilerplate was generated properly.
+`rails db:migrate` and navigate to `/actors` and verify that the CRUD resource boilerplate was generated properly.
 
 Then, quickly add a few rows:
 
@@ -149,7 +152,7 @@ Add the Character CRUD resource to our application:
 
     rails generate starter:resource character movie_id:integer actor_id:integer name:string
 
-`rails db:migrate` and navigate to [http://localhost:3000/characters](http://localhost:3000/characters) and verify that the CRUD resource boilerplate was generated properly. Then, add a few rows:
+`rails db:migrate` and navigate to `/characters` and verify that the CRUD resource boilerplate was generated properly. Then, add a few rows:
 
     rails dev:prime:characters
 
