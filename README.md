@@ -25,7 +25,10 @@ Our goal will be to build something that works like [this target](http://msm-ass
     rails dev:prime:directors
     ```
 
- 1. As always, use the [Continuous Integration workflow](https://guides.firstdraft.com/continuous-integration.html) to save, submit, and check progress. (You'll have to generate all three `starter:resource`s before any of your tests start passing.)
+ 1. As always, use the [Continuous Integration workflow](https://guides.firstdraft.com/continuous-integration.html) to save, submit, and check progress. (You'll have to generate all four `starter:resource`s before any of your tests start passing.)
+ 1. If at any point `rspec` fails with the message "Migrations are pending. To resolve this issue, run: bin/rake db:migrate RAILS_ENV=test" then run
+
+        rails db:migrate RAILS_ENV=test
 
 ## Two important notes about `rails console`
 
