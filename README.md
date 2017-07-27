@@ -102,6 +102,15 @@ For each question, see if you can craft a single Ruby expression that returns th
 ### Improving the generated boilerplate views
 
  1. You can use the included `rails generate starter:style default` generator to quickly write a much better application layout file. When you run this command, it will warn you that it's about to overwrite the existing application layout — say `y`. Refresh the page, and voila!
+
+    However, you may want to replace the link to get to the Git page, perhaps in the navbar:
+
+    ```html
+    <a href="/rails/git" target="_blank">
+      Git
+    </a>
+    ```
+
  1. Currently, on the movies index page and a movie's show page, the code that the generator wrote for you is showing users raw director ID numbers. This is bad. Replace the id number with the name of the director.
  1. On the new and edit movie pages, let's give our users a dropdown box to select a director, rather than having to type in a valid ID number. Let's use the `select_tag` view helper method to make this slightly easier than writing the raw HTML `<select>` and `<option>` tags by hand:
 
