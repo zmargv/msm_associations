@@ -1,5 +1,5 @@
-namespace :db do
-  namespace :seed do
+namespace :dev do
+  namespace :prime do
     desc "Seed directors"
     task directors: :environment do
       Director.destroy_all

@@ -54,3 +54,31 @@ group :test do
   gem "shoulda-matchers"
   gem "webmock"
 end
+
+group :development, :test do
+  gem 'dotenv-rails'
+  gem 'pry-rails'
+  gem 'grade_runner', github: 'firstdraft/grade_runner'
+  gem 'web_git', github: 'firstdraft/web_git'
+end
+
+group :development do
+  gem 'annotate'
+  gem 'awesome_print'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'firstdraft_generators', github: 'firstdraft/firstdraft_generators'
+  gem 'letter_opener'
+  gem 'meta_request'
+  gem 'wdm', platforms: [:mingw, :mswin, :x64_mingw]
+end
+
+group :test do
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'webmock'
+end
+
+gem 'bootstrap-sass'
+gem 'font-awesome-sass', '~> 4.7.0'

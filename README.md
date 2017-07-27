@@ -20,7 +20,7 @@ Our goal will be to build something that works like [this target](http://msm-ass
  1. Start the server and navigate to [http://localhost:3000/directors](http://localhost:3000/directors); verify that the CRUD resource boilerplate was generated properly.
  1. Quickly add a few rows to the directors table:
 
-        rails db:seed:directors
+        rails dev:prime:directors
  1. As always, Sync your work to your Fork often.
  1. `rails grade` to see how you are doing.
 
@@ -61,7 +61,7 @@ Execute the newly generated instructions to add the movies table:
 
 Quickly add a few rows to the movies table:
 
-    rails db:seed:movies
+    rails dev:prime:movies
 
 ### Validations
 
@@ -122,7 +122,7 @@ Let's now add Actors to our application. Our end goal is to show a cast on each 
 
 Then, quickly add a few rows:
 
-    rails db:seed:actors
+    rails dev:prime:actors
 
 ### Can X have many of Y? Can Y have many of X?
 
@@ -151,7 +151,7 @@ Add the Character CRUD resource to our application:
 
 `rails db:migrate` and navigate to [http://localhost:3000/characters](http://localhost:3000/characters) and verify that the CRUD resource boilerplate was generated properly. Then, add a few rows:
 
-    rails db:seed:characters
+    rails dev:prime:characters
 
 (This might take a minute.)
 

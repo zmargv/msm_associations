@@ -12,8 +12,9 @@ module MustSeeMoviesAssociations
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.generators do |g|
-      g.factory_girl false
       g.test_framework nil
+      g.factory_girl false
+      g.scaffold_stylesheet false
     end
   end
 end
