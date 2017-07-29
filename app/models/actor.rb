@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: directors
+# Table name: actors
 #
 #  id         :integer          not null, primary key
 #  name       :string
@@ -11,8 +11,9 @@
 #  updated_at :datetime         not null
 #
 
-class Director < ApplicationRecord
+class Actor < ApplicationRecord
     validates :name, presence: true, uniqueness: { scope: :dob, message: "Must be unique given DOB" }
     
-    has_many :movies, :class_name => "Movie", :foreign_key => "director_id"
+    has_many :characters, :class_name => "Character", :foreign_key => "actor_id"
+    has_many :movies, :through => :characters
 end
